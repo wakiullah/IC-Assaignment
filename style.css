@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    font-family: sans-serif;
+}
+
+nav {
+    background: orangered;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu>li {
+    position: relative;
+    padding: 20px 15px;
+}
+
+.menu>li:hover {
+    background-color: #222;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.secondmenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: orangered;
+    padding: 0;
+    list-style: none;
+    min-width: 150px;
+}
+
+.secondmenu li {
+    padding: 10px;
+    position: relative;
+}
+
+.secondmenu li:hover {
+    background: black;
+}
+
+.secondmenu a {
+    color: white;
+}
+
+.secondmenu .subsecondmenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: orangered;
+    list-style: none;
+    min-width: 150px;
+    padding-left: 0;
+}
+
+.menu li:hover>.secondmenu,
+.secondmenu li:hover>.subsecondmenu {
+    display: block;
+}
