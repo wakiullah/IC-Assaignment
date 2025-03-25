@@ -4,35 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>interactive Care Dropdown Menu</title>
-    <link rel="stylesheet" href="style.css">
+    <title>card Design</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1e1e2e;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            position: relative;
+            width: 50%;
+            margin: 50px auto;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: #444;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            margin-left: -2px;
+        }
+
+        .card-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 50px;
+        }
+
+        .card-icon {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+
+        .card-content {
+            background: #2e2e3e;
+            padding: 15px;
+            border-radius: 5px;
+            color: #ccc;
+        }
+
+        .card-content h3 {
+            margin: 0;
+        }
+
+        .card-content p {
+            font-size: 15px;
+        }
+.card-content span{
+    color: #9b9b9b;
+    font-size: 13px;
+}
+        .primary {
+            background: #007bff;
+        }
+
+        .danger {
+            background: #ff3b3b;
+        }
+
+        .primary-text {
+            display: inline-block;
+            background: #007bff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .dnager-text {
+            display: inline-block;
+            background: #ff3b3b;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+
+        .success-text {
+            display: inline-block;
+            background: #28a745;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+
+        .success {
+            background: #28a745;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/59b1265ea4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li>
-                <a href="#">WordPress</a>
-                <ul class="secondmenu">
-                    <li><a href="#">Themes</a></li>
-                    <li><a href="#">Plugins</a></li>
-                    <li>
-                        <a href="#">Tutorials</a>
-                        <ul class="subsecondmenu">
-                            <li><a href="#">Stuff</a></li>
-                            <li><a href="#">Things</a></li>
-                            <li><a href="#">Other Stuff</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#">Graphic Design</a></li>
-            <li><a href="#">Inspiration</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </nav>
+    <div class="card">
+        <div class="card-item">
+            <div class="card-icon primary"><i class="fa-regular fa-face-smile"></i></div>
+            <div class="card-content">
+                <h3 class="primary-text">Primary</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus quam sapiente recusandae ullam,
+                    ex, possimus aspernatur atque odit rerum cumque quis quod ipsum at sunt suscipit accusamus incidunt
+                    id.</p>
+                <span>1 Hours Ago</span>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-icon danger"><i class="fa-regular fa-face-grin-tears"></i></div>
+            <div class="card-content">
+                <h3 class="dnager-text">Danger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reiciendis delectus nisi eaque
+                    praesentium recusandae soluta itaque sunt, ratione aliquid officia at autem nemo quam quae maiores.
+                    Accusantium, qui corporis.</p>
+                <span>2 Hours Ago</span>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-icon success"><i class="fa-regular fa-face-grin-tears"></i></div>
+            <div class="card-content">
+                <h3 class="success-text">Success</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo voluptatum est deserunt magni
+                    totam facilis officia deleniti, laudantium, neque quasi, voluptate blanditiis tempore non tempora
+                    voluptatem. Odit, hic earum!
+                </p>
+                <span>6 Hours Ago</span>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
