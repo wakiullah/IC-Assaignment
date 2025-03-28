@@ -194,9 +194,11 @@ body {
 .product:hover .overlay {
     opacity: 1;
 }
-.product:hover .badge{
+
+.product:hover .badge {
     opacity: 0;
 }
+
 .overlay button {
     background: white;
     color: black;
@@ -267,5 +269,94 @@ body {
     .category,
     .product {
         width: 90%;
+    }
+}
+
+/* rooms  */
+/* inspiration */
+
+.inspiration {}
+
+.text-content {
+    flex: 1;
+    width: 40%;
+    padding: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.text-content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-content p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c49a4b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    width: 60%;
+    float: right;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    flex: 1;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    background: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .arrow-btn {
+        display: none;
     }
 }
