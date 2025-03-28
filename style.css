@@ -12,6 +12,11 @@ h3 {
     padding: 0;
 }
 
+.container {
+    width: 1183px;
+    margin: auto;
+}
+
 .primary-text {
     color: #B88E2F
 }
@@ -19,6 +24,8 @@ h3 {
 .primary-bg {
     background: #B88E2F
 }
+
+/* nav and hero */
 
 header {
     display: flex;
@@ -63,7 +70,9 @@ nav ul li a {
     align-items: center;
     justify-content: right;
     height: 100vh;
-    background: url('./assists/herobg.jpg') no-repeat center center/cover;
+    background: url('./assists/herobg.jpg') center/cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
 
 }
@@ -105,5 +114,158 @@ button {
 
     nav ul {
         flex-direction: column;
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.browse-range,
+.our-products {
+    text-align: center;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category {
+    overflow: hidden;
+}
+
+.category img {
+    width: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    height: 450px;
+
+}
+
+.category:hover img {
+    transform: scale(1.05);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+
+.product .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.cart-icons {
+    display: flex;
+    gap: 10px;
+    color: white;
+    margin-top: 20px;
+}
+
+.product:hover .overlay {
+    opacity: 1;
+}
+.product:hover .badge{
+    opacity: 0;
+}
+.overlay button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.overlay .actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.product:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.product-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background: #E97171;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.new {
+    background: green;
+}
+
+.price del {
+    color: #999;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .categories,
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category,
+    .product {
+        width: 90%;
     }
 }
