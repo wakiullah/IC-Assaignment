@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+hr{
+    color: #fff;
+}
+.container {
+    width: 1183px;
+    margin: auto;
+}
+
+.primary-text {
+    color: #B88E2F
+}
+
+.primary-bg {
+    background: #B88E2F
+}
+
+.mobile {
+    display: none;
+}
+
+/* nav and hero */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 44px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.icons i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100vh;
+    background: url('./assists/herobg.jpg') center/cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+
+}
+
+.hero-content {
+    max-width: 500px;
+    padding: 25px;
+    background: #fff3e3;
+    text-align: left;
+    margin-right: 100px;
+    padding-right: 40px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+.hero-content span {
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+
+button {
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
