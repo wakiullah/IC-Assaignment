@@ -1,0 +1,142 @@
+.shop-header {
+    background: url('../assists/sectionbg.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.623);
+    background-blend-mode: overlay;
+}
+
+.shop-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.shop-header p a {
+    color: black;
+    text-decoration: none;
+}
+
+.shop-header p span {
+    color: rgb(78, 78, 78);
+}
+
+.shop-menu-main {
+    background: #f8f1e9;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+
+.shop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    gap: 400px;
+}
+
+.filter-section,
+.view-toggle,
+.results-info,
+.show-options,
+.sort-options {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.view-toggle i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+input[type="number"] {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+.shop-left {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+.shop-right {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+.mt {
+    margin-top: 500px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: none;
+    background: #f5ebe0;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination .active {
+    background: #a57b4a;
+    color: white;
+}
+
+.pagination .next {
+    background: #f5ebe0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f8f1e9;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.feature-item i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.feature-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: gray;
+}
