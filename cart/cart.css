@@ -4,6 +4,7 @@
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .cart-items {
@@ -96,5 +97,5 @@ input[type="number"] {
     cursor: pointer;
     font-size: 16px;
     color: black;
-    
+
 }
