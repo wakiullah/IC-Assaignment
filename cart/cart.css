@@ -90,9 +90,11 @@ input[type="number"] {
     width: 100%;
     padding: 12px;
     margin-top: 20px;
-    background: #fff;
+    background: #f8f1e9;
     border: 1px solid #000;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
+    color: black;
+    
 }
