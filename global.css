@@ -379,3 +379,28 @@ footer {
         margin-left: 0;
     }
 }
+
+
+/* shop header */
+.shop-header {
+    background: url('./assists/sectionbg.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.623);
+    background-blend-mode: overlay;
+}
+
+.shop-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.shop-header p a {
+    color: black;
+    text-decoration: none;
+}
+
+.shop-header p span {
+    color: rgb(78, 78, 78);
+}

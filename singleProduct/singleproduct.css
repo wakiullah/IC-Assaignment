@@ -177,7 +177,10 @@
     background-color: #fff;
     margin-top: -0px;
 }
-
+.cart-actions button a{
+    color: black;
+    text-decoration: none;
+}
 .cart-btn:hover {
     background: #555;
 }
