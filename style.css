@@ -1,7 +1,17 @@
 
+.browse-range h2{
+    font-weight: bold;
+    margin-top: 70px;
+}
+.browse-range p{
+    margin-bottom: 50px;
+}
+.our-products h2{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
 
-/* rooms  */
-/* inspiration */
 .main-inspiration {
     padding: 50px 0;
     margin-top: 50px;
