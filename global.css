@@ -379,3 +379,61 @@ footer {
         margin-left: 0;
     }
 }
+
+
+/* shop header */
+.shop-header {
+    background: url('./assists/sectionbg.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.623);
+    background-blend-mode: overlay;
+}
+
+.shop-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.shop-header p a {
+    color: black;
+    text-decoration: none;
+}
+
+.shop-header p span {
+    color: rgb(78, 78, 78);
+}
+
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f8f1e9;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.feature-item i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.feature-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: gray;
+}
