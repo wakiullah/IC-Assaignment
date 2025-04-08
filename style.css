@@ -176,3 +176,27 @@
     }
 
 }
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr 1fr ;
+        width: 90%;
+        margin: auto;
+    }
+
+  
+
+    .text-content {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: auto auto auto;
+    }
+
+}

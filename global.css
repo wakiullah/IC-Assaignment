@@ -4,9 +4,11 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 * {
     box-sizing: border-box;
-  }
+}
+
 h1,
 h2,
 h3 {
@@ -22,12 +24,14 @@ hr {
     width: 1183px;
     margin: auto;
 }
+
 @media (max-width: 768px) {
-   .container{
-    max-width: 100%;
-   }
-    
- }
+    .container {
+        max-width: 100%;
+    }
+
+}
+
 .primary-text {
     color: #B88E2F
 }
@@ -160,12 +164,14 @@ body {
     gap: 20px;
     margin-top: 20px;
 }
+
 @media (max-width: 768px) {
-   .categories{
-    grid-template-columns: 1fr;
-   }
-   
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
 }
+
 .category {
     overflow: hidden;
 }
@@ -290,7 +296,7 @@ body {
 
     .categories,
     .products {
-       grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
         align-items: center;
     }
 
@@ -300,7 +306,6 @@ body {
         margin: auto;
     }
 }
-
 
 /* footer */
 
