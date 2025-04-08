@@ -5,6 +5,10 @@ body {
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3 {
@@ -19,6 +23,13 @@ hr {
 .container {
     width: 1183px;
     margin: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
 }
 
 .primary-text {
@@ -154,6 +165,13 @@ body {
     margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 .category {
     overflow: hidden;
 }
@@ -278,16 +296,16 @@ body {
 
     .categories,
     .products {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         align-items: center;
     }
 
     .category,
     .product {
         width: 90%;
+        margin: auto;
     }
 }
-
 
 /* footer */
 

@@ -1,7 +1,18 @@
+.browse-range h2 {
+    font-weight: bold;
+    margin-top: 70px;
+}
 
+.browse-range p {
+    margin-bottom: 50px;
+}
 
-/* rooms  */
-/* inspiration */
+.our-products h2 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
 .main-inspiration {
     padding: 50px 0;
     margin-top: 50px;
@@ -82,28 +93,13 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .image-gallery {
-        flex-direction: column;
-    }
-
-    .arrow-btn {
-        display: none;
-    }
-}
-
 
 
 /* furniture image gallery */
 .furnitureGallery {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .furnitureGallery h2 {
@@ -153,4 +149,54 @@
 
 
 
-/* footer */
+
+@media (min-width: 768px) {}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .arrow-btn {
+        display: none;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: auto;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr 1fr ;
+        width: 90%;
+        margin: auto;
+    }
+
+  
+
+    .text-content {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: auto auto auto;
+    }
+
+}
