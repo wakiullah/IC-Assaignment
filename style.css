@@ -1,0 +1,106 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+  }
+  ::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+  }
+  
+  .container {
+    background: url('https://media.istockphoto.com/id/119146359/photo/moonlit-road.jpg?s=612x612&w=0&k=20&c=FpKKMN-ajBM-krr7Fobc8ofw6cEOalVLq8D9QVNDXnE=') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: white;
+    width: 300px;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+  }
+  
+  .input-box {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px 40px 10px 35px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  
+  .input-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .login-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .or {
+    margin: 15px 0;
+    color: #bbb;
+  }
+  
+  .social button {
+    width: 45%;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: background 0.3s;
+  }
+  
+  .social button:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .google {
+    background-color: #db4437;
+  }
+  
