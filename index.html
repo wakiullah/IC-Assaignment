@@ -2,15 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Design</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <h1>This is a nav</h1>
-    <p>Add new item</p>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">WordPress</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li class="dropdown-right">
+                        <a href="#">Tutorials</a>
+                        <ul class="dropdown-right-content">
+                            <li><a href="#">Stuff</a></li>
+                            <li><a href="#">Things</a></li>
+                            <li><a href="#">Other Stuff</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
 </body>
 
 </html>
